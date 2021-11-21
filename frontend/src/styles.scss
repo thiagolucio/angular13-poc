@@ -1,0 +1,35 @@
+
+// Custom Theming for Angular Material
+@use '@angular/material' as mat;
+@include mat.core();
+
+
+// $angular13-poc-primary: mat.define-palette(mat.$indigo-palette);
+// $angular13-poc-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+$angular13-poc-primary: mat.define-palette(mat.$teal-palette, A700, A200, A400);
+$angular13-poc-accent: mat.define-palette(mat.$pink-palette, A600, A100, A400);
+$angular13-poc-warn: mat.define-palette(mat.$red-palette);
+
+$angular13-poc-theme: mat.define-light-theme((
+  color: (
+    primary: $angular13-poc-primary,
+    accent: $angular13-poc-accent,
+    warn: $angular13-poc-warn,
+  )
+));
+
+
+@include mat.all-component-themes($angular13-poc-theme);
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import '~material-design-icons/iconfont/material-icons.css';
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.font-logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 22px;
+  font-weight: thin;
+}

@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  align-items: center; //vertical align
+
+  a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .logo {
+    max-height: 48px;
+  }
+
+  .title-group {
+    padding-left: 6px;
+    color: #42424f;
+
+    i { padding-right: 6px;}
+  }
+
+
+}
