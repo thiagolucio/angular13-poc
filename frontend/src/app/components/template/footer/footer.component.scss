@@ -1,0 +1,21 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+
+  .btn-up {
+    position: absolute;
+    bottom: 130px;
+    right: 16px;
+    background: #a8dba8;
+    color: #333333;
+    &:hover {
+      cursor: pointer;
+      background: #3b8686;
+      color: #ffffff;
+    }
+  }
+}
