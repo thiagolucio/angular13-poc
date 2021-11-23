@@ -1,8 +1,8 @@
 <mat-sidenav-container class="container">
-  <mat-sidenav class="sidenav-left" mode="side" opened fixedInViewport="true" fixedTopGap="64" fixedBottomGap="130">
+  <mat-sidenav class="sidenav-left" mode="side" opened fixedInViewport="true" fixedTopGap="64">
     <mat-nav-list class="navlist-item">
       <a mat-list-item routerLink="/">
-        <mat-icon>home</mat-icon>
+        <mat-icon>account_balance</mat-icon>
       </a>
       <a mat-list-item routerLink="/">
         <mat-icon>info</mat-icon>
@@ -12,4 +12,7 @@
       </a>
     </mat-nav-list>
   </mat-sidenav>
+  <mat-sidenav-content class="content">
+    <app-home></app-home>
+  </mat-sidenav-content>
 </mat-sidenav-container>

@@ -5,6 +5,7 @@
   height: auto;
   margin: 0;
   padding: 0;
+  z-index: 10; //to secure garantee that footer is always on the first view layer
 
   .btn-up {
     position: absolute;
