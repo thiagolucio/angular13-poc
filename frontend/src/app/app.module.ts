@@ -11,6 +11,9 @@ import { NavComponent } from './components/template/nav/nav.component';
 import { HomeComponent } from './views/home/home.component';
 import { ProductCrudComponent } from './views/product-crud/product-crud.component';
 import { BackToTopComponent } from './components/back-to-top/back-to-top.component';
+import { ColorDeleteDirective } from './directives/color-delete.directive';
+import { ForDirective } from './directives/for.directive';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +23,9 @@ import { BackToTopComponent } from './components/back-to-top/back-to-top.compone
     NavComponent,
     HomeComponent,
     ProductCrudComponent,
-    BackToTopComponent
+    BackToTopComponent,
+    ColorDeleteDirective,
+    ForDirective
   ],
   imports: [
     BrowserModule,
