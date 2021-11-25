@@ -1,6 +1,7 @@
 .container {
   .sidenav-left {
     background-color: #64FFDA;
+    z-index: 9;
     mat-icon {color: #62626a;}
   }
   .content {
