@@ -13,7 +13,8 @@ import { ProductCrudComponent } from './views/product-crud/product-crud.componen
 import { BackToTopComponent } from './components/back-to-top/back-to-top.component';
 import { ColorDeleteDirective } from './directives/color-delete.directive';
 import { ForDirective } from './directives/for.directive';
-
+import { ProductCreateComponent } from './components/product/product-create/product-create.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,13 +26,15 @@ import { ForDirective } from './directives/for.directive';
     ProductCrudComponent,
     BackToTopComponent,
     ColorDeleteDirective,
-    ForDirective
+    ForDirective,
+    ProductCreateComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    AngularMaterialModule
+    AngularMaterialModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
