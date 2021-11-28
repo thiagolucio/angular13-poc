@@ -1,8 +1,10 @@
 .container {
   .sidenav-left {
-    background-color: #64FFDA;
+    background-color: #64ffda;
     z-index: 9;
-    mat-icon {color: #62626a;}
+    mat-icon {
+      color: #62626a;
+    }
   }
   .content {
     height: 100%;
