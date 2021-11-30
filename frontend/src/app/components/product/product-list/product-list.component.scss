@@ -1,0 +1,33 @@
+.container_table {
+  margin-bottom: 0;
+  z-index: 1;
+  .full-width-table {
+    width: 100%;
+    margin-top: 3%;
+    .header_table {
+      background-color: #64ffda;
+      border-bottom: 1px solid #333;
+      border-top: 1px solid #333;
+      padding: 10px;
+    }
+    th {
+      color: #62626a;
+      font-weight: bold;
+      font-size: 12px;
+      margin: auto;
+      text-transform: uppercase;
+      text-align: center !important;
+    }
+
+    tr > td {
+      max-width: 100px;
+      text-align: center;
+    }
+    .img_cover {
+      width: auto;
+      height: 100px;
+      margin: auto;
+    }
+  }
+
+}

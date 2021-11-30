@@ -1,0 +1,22 @@
+<div class="container_horizontal padding_16px">
+  <ul>
+    <li *ngFor="let product of products">
+      <div class="product_container">
+        <div class="product_image">
+          <img src="{{product.imgCover}}" alt="{{product.title}}" class="product_image">
+        </div>
+        <div class="product_info">
+          <h3>{{product.title}}</h3>
+          <p>{{product.author}}</p>
+          <p>{{product.language}}</p>
+          <a href="{{product.url}}" target="_blank" nonreference="true">
+            <button mat-raised-button color="primary" title="Go to book sale link">
+              <span class="material-icons">link</span> Link to product
+            </button>
+          </a>
+          <p>{{product.price}}</p>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>

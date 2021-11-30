@@ -26,8 +26,14 @@ export class ProductService {
     });
   }
 
+  // create new product to products
   create(product: Product): Observable<Product> {
     return this.http.post<Product>(`${this.API_PRODUCTS}`, product);
+  }
+
+  // read all products from array of products
+  read(): Observable<Product[]> {
+    return this.http.get<Product[]>(`${this.API_PRODUCTS}`);
   }
 
 }
