@@ -16,7 +16,7 @@ import { ProductCreateComponent } from './components/product/product-create/prod
 import { HttpClientModule } from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
 import { ProductReadComponent } from './components/product/product-read/product-read.component';
-import { ProductListComponent } from './components/product/product-list/product-list.component';
+import { ProductListingComponent } from './components/product/product-listing/product-listing.component';
 
 
 @NgModule({
@@ -31,7 +31,7 @@ import { ProductListComponent } from './components/product/product-list/product-
     ForDirective,
     ProductCreateComponent,
     ProductReadComponent,
-    ProductListComponent,
+    ProductListingComponent
   ],
   imports: [
     BrowserModule,

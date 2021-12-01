@@ -7,7 +7,7 @@
       "language": "English",
       "url": "https://enos.itcollege.ee/~jpoial/oop/naited/Clean%20Code.pdf",
       "imgCover": "https://m.media-amazon.com/images/I/41SH-SvWPxL.jpg",
-      "price": "19.99"
+      "price": "0"
     },
     {
       "id": 2,
@@ -35,6 +35,6 @@
       "url": "https://www.kobo.com/br/pt/ebook/domain-driven-design",
       "imgCover": "https://kbimages1-a.akamaihd.net/e4d1ed48-5b3b-4876-af29-924ae130d0d4/353/569/90/False/domain-driven-design.jpg",
       "price": "41.33"
-    }
+    } 
   ]
 }

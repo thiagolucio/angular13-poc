@@ -1,6 +1,12 @@
-.container-buttons {
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
-  grid-gap: 16px;
+.clean_container {
+  .container-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    grid-gap: 16px;
+  }
+  .mat-form-field {
+    width: 70%;
+  }
 }
+

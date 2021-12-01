@@ -4,32 +4,18 @@ import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { map } from 'rxjs/operators';
 import { Observable, of as observableOf, merge } from 'rxjs';
-// import { ProductService } from './../product.service';
-// import { ProductReadComponent } from '../product-read/product-read.component';
+import { ProductService } from './../product.service';
+import { ProductListingComponent } from '../product-listing/product-listing.component';
 
 
-const BOOK_DATA: Product[] = [
-  {id: 1, title: 'Title', author: 'author', language: 'Portugues', url: 'URL DO LIVRO', imgCover: 'No Image', price: 1.0079},
-  {id: 2, title: 'Title', author: 'author', language: 'Portugues', url: 'URL DO LIVRO', imgCover: 'No Image', price: 1.0079},
-  {id: 3, title: 'Title', author: 'author', language: 'Portugues', url: 'URL DO LIVRO', imgCover: 'No Image', price: 1.0079},
-  {id: 4, title: 'Title', author: 'author', language: 'Portugues', url: 'URL DO LIVRO', imgCover: 'No Image', price: 1.0079},
-  {id: 5, title: 'Title', author: 'author', language: 'Portugues', url: 'URL DO LIVRO', imgCover: 'No Image', price: 1.0079},
-  {id: 6, title: 'Title', author: 'author', language: 'Portugues', url: 'URL DO LIVRO', imgCover: 'No Image', price: 1.0079},
-  {id: 7, title: 'Title', author: 'author', language: 'Portugues', url: 'URL DO LIVRO', imgCover: 'No Image', price: 1.0079},
-  {id: 8, title: 'Title', author: 'author', language: 'Portugues', url: 'URL DO LIVRO', imgCover: 'No Image', price: 1.0079},
-  {id: 9, title: 'Title', author: 'author', language: 'Portugues', url: 'URL DO LIVRO', imgCover: 'No Image', price: 1.0079},
-  {id: 10, title: 'Title', author: 'author', language: 'Portugues', url: 'URL DO LIVRO', imgCover: 'No Image', price: 1.0079},
-  {id: 11, title: 'Title', author: 'author', language: 'Portugues', url: 'URL DO LIVRO', imgCover: 'No Image', price: 1.0079},
-  {id: 12, title: 'Title', author: 'author', language: 'Portugues', url: 'URL DO LIVRO', imgCover: 'No Image', price: 1.0079}
+const products: Product[] = [];
 
-];
-
-export class ProductListDataSource extends DataSource<Product> {
-  data: Product[] = BOOK_DATA;
+export class ProductListingDataSource extends DataSource<Product> {
+  data: Product[] = products;
   paginator: MatPaginator | undefined;
   sort: MatSort | undefined;
 
-  constructor() {
+  constructor(private productService: ProductService) {
     super();
   }
 

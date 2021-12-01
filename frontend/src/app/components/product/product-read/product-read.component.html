@@ -1,22 +1,23 @@
-<div class="container_horizontal padding_16px">
-  <ul>
-    <li *ngFor="let product of products">
-      <div class="product_container">
-        <div class="product_image">
-          <img src="{{product.imgCover}}" alt="{{product.title}}" class="product_image">
-        </div>
-        <div class="product_info">
-          <h3>{{product.title}}</h3>
-          <p>{{product.author}}</p>
-          <p>{{product.language}}</p>
-          <a href="{{product.url}}" target="_blank" nonreference="true">
-            <button mat-raised-button color="primary" title="Go to book sale link">
-              <span class="material-icons">link</span> Link to product
-            </button>
-          </a>
-          <p>{{product.price}}</p>
-        </div>
+<div class="containner_books_cards padding_16px">
+  <mat-card class="card_books" *ngFor="let product of products">
+    <mat-card-header>
+      <div mat-card-avatar class="product_image">
+        <div class="layer_image"></div>
+        <img src="{{product.imgCover}}" alt="{{product.title}}" class="product_image" title="{{product.title}}" />
       </div>
-    </li>
-  </ul>
+    </mat-card-header>
+    <mat-card-content>
+        <h4><b>{{product.title}}</b></h4>
+          <p><b>Author:</b> {{product.author}}</p>
+          <p><b>Language:</b> {{product.language}}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <a href="{{product.url}}" target="_blank" nonreference="true">
+        <button mat-raised-button color="primary" title="Sale Link">
+          <span class="material-icons">shopping_basket</span> Buy
+        </button>
+      </a>
+      <div class="product_price padding_16px" align="center"><b>U$ </b>{{product.price}}</div>
+    </mat-card-actions>
+  </mat-card>
 </div>
