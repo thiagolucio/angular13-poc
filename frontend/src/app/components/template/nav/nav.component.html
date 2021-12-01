@@ -1,14 +1,18 @@
-<mat-sidenav-container class="container">
-  <mat-sidenav class="sidenav-left" mode="side" opened fixedInViewport="true" fixedTopGap="64">
-    <mat-nav-list class="navlist-item">
-      <a mat-list-item routerLink="/">
-        <mat-icon>account_balance</mat-icon>
+<mat-sidenav-container class="nav_container">
+  <mat-sidenav class="sidenav_left" mode="side" opened fixedInViewport="true">
+    <mat-card class="clean_container">
+      <a routerLink="/">
+        <img mat-card-image src="assets/images/logox64.png" alt="Top bar logo from application" class="logo">
       </a>
+      <span class="font_trends"> BeWikki </span>
+    </mat-card>
+    <mat-divider></mat-divider>
+    <mat-nav-list class="navlist_item">
       <a mat-list-item routerLink="/">
-        <mat-icon>shopping_cart</mat-icon>
+        <mat-icon>local_library</mat-icon> Home
       </a>
       <a mat-list-item routerLink="/products">
-        <mat-icon>contact_mail</mat-icon>
+        <mat-icon>library_books</mat-icon> Books
       </a>
     </mat-nav-list>
   </mat-sidenav>
@@ -16,3 +20,4 @@
     <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
+<app-footer></app-footer>

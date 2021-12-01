@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/template/header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularMaterialModule } from './modules/angular-material/angular-material.module';
 import { FooterComponent } from './components/template/footer/footer.component';
@@ -15,11 +14,14 @@ import { ColorDeleteDirective } from './directives/color-delete.directive';
 import { ForDirective } from './directives/for.directive';
 import { ProductCreateComponent } from './components/product/product-create/product-create.component';
 import { HttpClientModule } from '@angular/common/http';
+import {FormsModule} from '@angular/forms';
+import { ProductReadComponent } from './components/product/product-read/product-read.component';
+import { ProductListingComponent } from './components/product/product-listing/product-listing.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
     FooterComponent,
     NavComponent,
     HomeComponent,
@@ -27,14 +29,17 @@ import { HttpClientModule } from '@angular/common/http';
     BackToTopComponent,
     ColorDeleteDirective,
     ForDirective,
-    ProductCreateComponent
+    ProductCreateComponent,
+    ProductReadComponent,
+    ProductListingComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     AngularMaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

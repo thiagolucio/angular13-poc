@@ -1,6 +1,6 @@
 import { Product } from './../product.model';
 import { Router } from '@angular/router';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, NgModule } from '@angular/core';
 import { ProductService } from './../product.service';
 
 @Component({
@@ -8,20 +8,23 @@ import { ProductService } from './../product.service';
   templateUrl: './product-create.component.html',
   styleUrls: ['./product-create.component.scss']
 })
+
 export class ProductCreateComponent implements OnInit {
 
   product: Product = {
-    id: undefined,
+    id: 2,
     title: '',
     author: '',
     language: '',
+    url: '',
+    imgCover: '',
     price: 0
   }
 
-  constructor(
+  constructor (
     private productService: ProductService,
     private router: Router
-    ) { }
+  ) { }
 
   ngOnInit(): void {
 
@@ -37,7 +40,5 @@ export class ProductCreateComponent implements OnInit {
   cancelCreateProduct(): void {
     this.router.navigate(['/products']);
   }
-
-
 
 }

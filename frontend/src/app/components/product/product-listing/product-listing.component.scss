@@ -1,0 +1,18 @@
+.container_table {
+  width: 80%;
+  margin: 16px;;
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    td {
+      max-width: 200px;
+      padding: 0 10px;
+    }
+  }
+}
+
+.product_image {
+  height: 80px;
+  width: auto;
+}

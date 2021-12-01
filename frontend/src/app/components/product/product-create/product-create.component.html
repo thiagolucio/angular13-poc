@@ -1,12 +1,43 @@
-<p>product-create works!</p>
+  <mat-card class="clean_container">
+    <mat-card-header>
+      <mat-card-title>
+        <h1>New Publication</h1>
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form class="container_vertical_wrap" role="form">
+        <mat-form-field>
+          <input matInput placeholder="Book Title" [(ngModel)]="product.title" name="title">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Author name" [(ngModel)]="product.author" name="author">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Language" [(ngModel)]="product.language" name="language">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Sale Book link" [(ngModel)]="product.url" name="link">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Book cover image Link" [(ngModel)]="product.imgCover" name="imgCover">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Price of Book" [(ngModel)]="product.price" name="price" type="number">
+        </mat-form-field>
+        <div class="container-buttons">
+          <button mat-raised-button color="primary" (click)="createProduct()" type="submit">
+            <span class="material-icons">done</span> Save
+          </button>
+          <button type="button" mat-raised-button color="accent" (click)="cancelCreateProduct()">
+            <span class="material-icons">keyboard_return</span>  Cancel
+          </button>
+        </div>
+      </form>
+    </mat-card-content>
+  </mat-card>
 
-<div class="container-buttons">
-  <button mat-raised-button color="primary" (click)="createProduct()">
-    <span class="material-icons">done</span> Save
-  </button>
 
-  <button mat-raised-button color="accent" (click)="cancelCreateProduct()">
-    <span class="material-icons">keyboard_return</span>  Cancel
-  </button>
-</div>
+
+
+
 

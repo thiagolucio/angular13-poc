@@ -4,7 +4,7 @@
 ## 🚀 About Me
 I'm Thiago Lúcio Bittencourt. A old Webdesigner with great UX/ UI Interaction experience who start migrate to Front-end Development world in 2015/Nov. 
 
-- Let's take a look in my Personal WebSite if you like to know more about me - [https://thiagolucio.com.br](https://thiagolucio.com.br)
+- Take a look in my Personal WebSite if you like to know more about me - [https://thiagolucio.com.br](https://thiagolucio.com.br)
 
 ## Run Locally
 

@@ -1,9 +1,29 @@
-.container {
-  .sidenav-left {
+.nav_container {
+  margin: 0;
+  padding: 0;
+  .sidenav_left {
+    position: fixed;
+    width: 128px;
+    max-width: 200px;
     background-color: #64ffda;
-    z-index: 9;
-    mat-icon {
-      color: #62626a;
+    z-index: 10;
+    text-align: center;
+
+    .navlist_item {
+      a {
+        font-family: "Pacifico", cursive;
+        color: #62626a;
+        mat-icon {
+          color: #62626a;
+          margin-right: 8px;
+        }
+      }
+    }
+
+    .logo {
+      width: 64px;
+      height: auto;
+      margin: auto;
     }
   }
   .content {
@@ -12,5 +32,4 @@
     color: #62626a;
     padding: 16px;
   }
-
 }
