@@ -1,13 +1,26 @@
 .container_table {
-  width: 80%;
-  margin: 16px;;
+  width: 100%;
+  margin: 16px;
   table {
-    width: 100%;
+    width: 95%;
     border-collapse: collapse;
     border-spacing: 0;
+
+    .mat-header-cell {
+      background-color: #64ffda;
+      font-weight: bold;
+    }
+    .table_products .mat-header-cell {
+      text-align: center;
+    }
     td {
-      max-width: 200px;
-      padding: 0 10px;
+      min-width: 60px;
+      text-align: left;
+      padding: 6px 10px;
+    }
+    .table_actions {
+      display: flex;
+      flex-direction: row;
     }
   }
 }

@@ -19,7 +19,7 @@ export class ProductListingComponent implements OnInit {
   dataSource: ProductListingDataSource;
 
   products: Product[] = [];
-  displayedColumns = ['id', 'title', 'author','language', 'url', 'imgCover', 'price'];
+  displayedColumns = ['id', 'title', 'author','language', 'url', 'imgCover', 'price', 'action'];
 
   constructor(private productService: ProductService) {
     this.dataSource = new ProductListingDataSource(this.productService);
@@ -37,5 +37,9 @@ export class ProductListingComponent implements OnInit {
     this.dataSource.paginator = this.paginator;
     this.table.dataSource = this.dataSource;
   }
+
+  // pagination(): void {
+  //   let page5 =
+  // }
 
 }

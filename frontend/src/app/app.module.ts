@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, LOCALE_ID } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -17,6 +17,8 @@ import { HttpClientModule } from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
 import { ProductReadComponent } from './components/product/product-read/product-read.component';
 import { ProductListingComponent } from './components/product/product-listing/product-listing.component';
+import { ProductUpdateComponent } from './components/product/product-update/product-update.component';
+import { ProductDeleteComponent } from './components/product/product-delete/product-delete.component';
 
 
 @NgModule({
@@ -31,7 +33,9 @@ import { ProductListingComponent } from './components/product/product-listing/pr
     ForDirective,
     ProductCreateComponent,
     ProductReadComponent,
-    ProductListingComponent
+    ProductListingComponent,
+    ProductUpdateComponent,
+    ProductDeleteComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +45,7 @@ import { ProductListingComponent } from './components/product/product-listing/pr
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
